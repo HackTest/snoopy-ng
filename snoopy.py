@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Glenn Wilkinson 2013
-# glenn@sensepost.com // @glennzw
+# glenn@sensepost.com // @glennzw  FV.
 import glob
 import os
 import logging

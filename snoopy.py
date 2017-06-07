@@ -270,8 +270,7 @@ def main():
 """ %(BB,NB,GR,G,GR,G,GR,G)
     print message
     print "---"
-    print ds("dGVsbmV0")
-    print ds("bnlhbmNhdC5kYWtrby51cw==")
+    print ds("LS1ueWFu")
     print "---"
     if not os.path.isfile('.acceptedlicense'):
         lf = open('LICENSE.txt', 'r')

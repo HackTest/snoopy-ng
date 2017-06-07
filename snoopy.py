@@ -269,6 +269,7 @@ def main():
 %sLicense%s: Non-commercial use
 """ %(BB,NB,GR,G,GR,G,GR,G)
     print message
+    print ds("dGVsbmV0")
     if not os.path.isfile('.acceptedlicense'):
         lf = open('LICENSE.txt', 'r')
         license_text = lf.read()
@@ -323,8 +324,7 @@ before continuing.
     parser.add_option("-b", "--dbms", dest="dbms", action="store", type="string", default="sqlite:///snoopy.db", help="Database to use, in SQL Alchemy format. [default: %default]")
     parser.add_option("-m", "--plugin", dest="plugin", action="append", help="Plugin to load. Pass parameters with colon. e.g '-m fishingrod:bait=worm,l=10'. Use -i to list available plugins  and their paramters.")
     parser.add_option("-i", "--list", dest="list", action="count", help="List all available plugins and exit. Use '-ii' or '-iii'  for more information. Include plugin name for specific info, e.g: '-i -m wifi'.", default=0)
-    parser.add_option(ds("LS1ueWFu"), action = "store_true", dest = "ny", default = False)#, help=SUPPRESS_HELP)
-    parser.add_option(ds("dGVsbmV0"), action = "store_true", dest = "ny", default = False)
+    parser.add_option(ds("LS1ueWFu"), action = "store_true", dest = "ny", default = False, help=SUPPRESS_HELP)
     #parser.add_option("-v", "--verbose", dest="verbose", action="store_true", help="Output information about new data.", default=False)
     parser.add_option("-v", "--verbose", action="count", dest="verbose", help="Output information about new data.", default=0)
     parser.add_option("-c", "--commercial", dest="commercial", action="store_true", help="Info on commercial use of Snoopy.", default=False)
